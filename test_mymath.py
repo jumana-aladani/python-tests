@@ -1,4 +1,12 @@
 # test_mymath.py
-from mymath import add
+from mymath import add, is_even
 
-assert add(2, 3) == 5
+
+def test_add():
+    assert add(2, 3) == 5
+    assert add(-1, 1) == 0
+
+
+def test_is_even():
+    assert is_even(4) is True
+    assert is_even(7) is False
